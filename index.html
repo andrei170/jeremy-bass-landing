@@ -9,6 +9,7 @@
 <meta property="og:title" content="Jeremy Bass | Prime Estate Agents, Primrose Hill Village">
 <meta property="og:description" content="The independent specialist for Primrose Hill village homes since 2000. Personal service from the founder, not a chain.">
 <meta property="og:url" content="https://andrei170.github.io/jeremy-bass-landing/">
+<meta property="og:image" content="https://andrei170.github.io/jeremy-bass-landing/proof/office.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Jeremy Bass | Prime Estate Agents, Primrose Hill Village">
 <meta name="twitter:description" content="The independent specialist for Primrose Hill village homes since 2000.">
@@ -24,8 +25,9 @@
   *{margin:0;padding:0;box-sizing:border-box}
   html{scroll-behavior:smooth}
   body{font-family:'Inter',-apple-system,Segoe UI,sans-serif;background:var(--cream);color:var(--text);line-height:1.7;font-weight:300;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-  .wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 24px}
   a{color:inherit;text-decoration:none}
+  img{display:block;max-width:100%}
   #prog{position:fixed;top:0;left:0;height:2px;width:0;z-index:99;background:linear-gradient(90deg,var(--gold),var(--ink2))}
   .btn{display:inline-block;background:var(--ink);color:var(--cream);font-weight:500;padding:16px 36px;border-radius:3px;border:none;cursor:pointer;font-size:13.5px;letter-spacing:1px;text-transform:uppercase;transition:transform .15s,background .2s}
   .btn:hover{transform:translateY(-2px);background:var(--ink2)}
@@ -37,7 +39,7 @@
   .logo{font-family:var(--serif);font-weight:600;font-size:26px;letter-spacing:.5px;color:var(--ink);line-height:1}
   .logo small{display:block;font-family:'Inter';font-size:9px;letter-spacing:3.5px;text-transform:uppercase;color:var(--gold);font-weight:600;margin-top:3px}
   .navlinks{display:flex;gap:30px;align-items:center}.navlinks a{font-size:13px;color:var(--muted);letter-spacing:.6px;text-transform:uppercase}.navlinks a:hover{color:var(--ink)}
-  @media(max-width:860px){.navlinks a:not(.btn){display:none}}
+  @media(max-width:880px){.navlinks a:not(.btn){display:none}}
   section{padding:92px 0}
   .eyebrow{font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:20px}
   h1{font-family:var(--serif);font-size:clamp(44px,7.2vw,82px);font-weight:500;line-height:1.0;letter-spacing:-.5px;color:var(--ink)}
@@ -45,42 +47,50 @@
   h2{font-family:var(--serif);font-size:clamp(32px,4.6vw,52px);font-weight:500;line-height:1.05;color:var(--ink);margin-bottom:16px}
   h3{font-size:15px;font-weight:600;margin-bottom:8px;letter-spacing:.4px}
   p.lead{font-size:18px;color:var(--muted);margin:24px 0 36px;max-width:560px;font-weight:300}
-  .hero{position:relative;overflow:hidden;background:
-    linear-gradient(180deg,rgba(15,23,34,.0),rgba(15,23,34,.0)),
-    radial-gradient(90% 120% at 80% -10%,rgba(184,153,104,.14),transparent 60%),var(--cream);padding:70px 0 86px}
-  .hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:50px;align-items:center}
+  .hero{position:relative;overflow:hidden;background:radial-gradient(90% 120% at 80% -10%,rgba(184,153,104,.14),transparent 60%),var(--cream);padding:66px 0 84px}
+  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center}
   .est{display:inline-flex;align-items:center;gap:10px;font-size:12.5px;letter-spacing:.6px;color:var(--ink);border:1px solid var(--line);background:rgba(255,255,255,.6);border-radius:30px;padding:8px 16px;margin-bottom:26px}
   .est b{color:var(--gold);font-family:var(--serif);font-size:17px}
-  .hero-card{border-radius:6px;overflow:hidden;background:linear-gradient(160deg,var(--ink2),var(--ink));color:var(--cream);padding:0;box-shadow:0 30px 60px -34px rgba(15,23,34,.7)}
-  .hero-card .photo{aspect-ratio:16/10;background:
-    linear-gradient(180deg,rgba(15,23,34,0),rgba(15,23,34,.55)),
-    radial-gradient(120% 130% at 30% 10%,#3a4a63,#1a2433),
-    linear-gradient(135deg,#33425a,#1a2433);display:grid;place-items:end start;padding:24px}
-  .hero-card .photo span{font-family:var(--serif);font-size:21px;color:var(--cream);font-style:italic}
-  .hero-card .meta{padding:26px 30px}
-  .hero-card .meta h3{font-family:var(--serif);font-size:23px;font-weight:500;letter-spacing:0;color:#fff;margin-bottom:10px}
-  .hero-card .meta p{color:var(--stone);font-size:14.5px}
+  .hero-photo{position:relative;border-radius:6px;overflow:hidden;aspect-ratio:3/2;box-shadow:0 36px 70px -36px rgba(15,23,34,.7)}
+  .hero-photo img{width:100%;height:100%;object-fit:cover}
+  .hero-photo .cap{position:absolute;left:0;right:0;bottom:0;padding:20px 22px;background:linear-gradient(180deg,transparent,rgba(15,23,34,.78));color:var(--cream)}
+  .hero-photo .cap b{font-family:var(--serif);font-size:20px;font-weight:500;display:block}
+  .hero-photo .cap span{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--gold2)}
   .strip{background:var(--ink);color:var(--stone)}
   .strip .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;padding:36px 24px}
   .strip .s{flex:1;min-width:190px}
   .strip b{font-family:var(--serif);display:block;font-size:30px;color:#fff;font-weight:500;margin-bottom:2px}
   .strip small{font-size:13px}
-  .split{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
   .listings{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:38px}
   .lcard{border:1px solid var(--line);border-radius:6px;overflow:hidden;background:#fff;transition:transform .2s,box-shadow .2s}
   .lcard:hover{transform:translateY(-4px);box-shadow:0 22px 44px -30px rgba(15,23,34,.5)}
-  .lcard .img{aspect-ratio:4/3;background:linear-gradient(135deg,#3a4a63,#1d2939);display:grid;place-items:center;color:var(--stone);font-family:var(--serif);font-style:italic;font-size:18px;position:relative}
+  .lcard .img{aspect-ratio:4/3;overflow:hidden;position:relative}
+  .lcard .img img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+  .lcard:hover .img img{transform:scale(1.05)}
   .lcard .img .pill{position:absolute;top:12px;left:12px;font-family:'Inter';font-size:10px;letter-spacing:1.5px;text-transform:uppercase;background:var(--gold);color:#1d1709;padding:4px 10px;border-radius:2px;font-weight:700}
   .lcard .b{padding:18px 20px}
   .lcard .b h4{font-family:var(--serif);font-size:20px;color:var(--ink);font-weight:600}
   .lcard .b p{color:var(--muted);font-size:13.5px;margin-top:4px}
   .lnote{font-size:12.5px;color:var(--muted);font-style:italic;margin-top:16px}
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
   .founder{background:#fff}
-  .portrait{aspect-ratio:4/5;border-radius:6px;background:linear-gradient(160deg,var(--ink2),var(--ink));display:grid;place-items:center;text-align:center;padding:34px;color:var(--cream)}
-  .portrait .ini{font-family:var(--serif);font-size:70px;color:var(--gold);font-weight:500}
+  .pf{border-radius:6px;overflow:hidden;box-shadow:0 26px 50px -32px rgba(15,23,34,.6)}
+  .pf img{width:100%;display:block}
   .cred{list-style:none;margin-top:20px}
   .cred li{padding:11px 0 11px 28px;position:relative;color:var(--muted);border-bottom:1px solid var(--line);font-size:15px}
   .cred li:before{content:"❖";position:absolute;left:0;color:var(--gold)}
+  /* area band */
+  .area{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:34px}
+  .area figure{overflow:hidden;border-radius:6px;aspect-ratio:3/2;border:1px solid var(--line)}
+  .area figure img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+  .area figure:hover img{transform:scale(1.06)}
+  /* quotes */
+  .quotes{background:var(--cream2)}
+  .qgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:34px}
+  .quote{background:#fff;border:1px solid var(--line);border-radius:6px;padding:28px}
+  .quote .stars{color:var(--gold);letter-spacing:2px;margin-bottom:12px}
+  .quote p{font-family:var(--serif);font-size:21px;color:var(--ink);line-height:1.4}
+  .quote .by{margin-top:14px;font-size:13px;color:var(--muted);font-weight:600;letter-spacing:.4px}
   .lm{background:var(--ink);color:var(--cream);border-radius:6px;padding:54px 40px;text-align:center}
   .lm h2{color:#fff}
   .lm-form{display:flex;gap:10px;max-width:480px;margin:24px auto 0;flex-wrap:wrap}
@@ -96,7 +106,8 @@
   footer{background:var(--ink);color:var(--stone);font-size:13px;padding:42px 0;text-align:center}
   footer .logo{color:#fff;justify-content:center;margin-bottom:10px}
   .demo-tag{position:fixed;bottom:14px;right:14px;background:rgba(15,23,34,.92);color:var(--stone);font-size:11.5px;padding:8px 13px;border-radius:5px;z-index:60;letter-spacing:.3px}
-  @media(max-width:860px){.hero-grid,.split,.cgrid{grid-template-columns:1fr}.listings{grid-template-columns:1fr}}
+  @media(max-width:880px){.hero-grid,.split,.cgrid{grid-template-columns:1fr}.listings{grid-template-columns:1fr 1fr}.area{grid-template-columns:1fr 1fr}.qgrid{grid-template-columns:1fr}}
+  @media(max-width:560px){.listings{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -120,9 +131,9 @@
     <a href="#valuation" class="btn">Book a valuation</a>
     <a href="#properties" class="btn-ghost btn" style="margin-left:10px">View properties</a>
   </div>
-  <div class="hero-card reveal in">
-    <div class="photo"><span>Primrose Hill village</span></div>
-    <div class="meta"><h3>A boutique agency, by design</h3><p>One office, one specialist patch, and a founder who handles your sale personally. No call centres, no churn, no handing you to a junior.</p></div>
+  <div class="hero-photo reveal in">
+    <img src="proof/office.jpg" alt="Jeremy Bass Estate Agents office, 50 Chalcot Road, Primrose Hill">
+    <div class="cap"><b>50 Chalcot Road, in the heart of the village</b><span>Jeremy Bass · Est. 2000</span></div>
   </div>
 </div></header>
 
@@ -136,13 +147,16 @@
 <section id="properties"><div class="wrap">
   <div class="eyebrow reveal">Properties</div>
   <h2 class="reveal">Prime homes, presented properly.</h2>
-  <p class="lead reveal">This is how your home would be shown: photo-led, searchable, and worthy of the address. Live listings would appear here.</p>
+  <p class="lead reveal">This is how your home would be shown: photo-led, searchable, and worthy of the address.</p>
   <div class="listings">
-    <div class="lcard reveal"><div class="img"><span class="pill">For sale</span>Period house</div><div class="b"><h4>Regents Park Road</h4><p>A handsome period family home in the heart of the village.</p></div></div>
-    <div class="lcard reveal"><div class="img"><span class="pill">For sale</span>Garden flat</div><div class="b"><h4>Chalcot Square</h4><p>An elegant lateral apartment moments from the park.</p></div></div>
-    <div class="lcard reveal"><div class="img"><span class="pill">Sold</span>Mews house</div><div class="b"><h4>Primrose Hill mews</h4><p>A rare mews home, sold discreetly to the right buyer.</p></div></div>
+    <div class="lcard reveal"><div class="img"><span class="pill">For sale</span><img src="proof/prop1.jpg" alt="Prime Primrose Hill apartment"></div><div class="b"><h4>Mansion apartment</h4><p>An elegant lateral home in a sought-after Primrose Hill block.</p></div></div>
+    <div class="lcard reveal"><div class="img"><span class="pill">For sale</span><img src="proof/prop2.jpg" alt="Prime Primrose Hill home"></div><div class="b"><h4>Village home</h4><p>A characterful period property moments from the park.</p></div></div>
+    <div class="lcard reveal"><div class="img"><span class="pill">For sale</span><img src="proof/prop3.jpg" alt="Prime Primrose Hill property"></div><div class="b"><h4>Period house</h4><p>A handsome family home in the heart of NW1.</p></div></div>
+    <div class="lcard reveal"><div class="img"><span class="pill">Sold</span><img src="proof/prop4.jpg" alt="Sold Primrose Hill property"></div><div class="b"><h4>Recently sold</h4><p>Marketed and sold discreetly to the right buyer.</p></div></div>
+    <div class="lcard reveal"><div class="img"><span class="pill">Area</span><img src="proof/area2.jpg" alt="Chalcot Crescent, Primrose Hill"></div><div class="b"><h4>Chalcot Crescent</h4><p>One of the village's most admired crescents.</p></div></div>
+    <div class="lcard reveal"><div class="img"><span class="pill">Area</span><img src="proof/area1.jpg" alt="Regents Park Road, Primrose Hill"></div><div class="b"><h4>Regents Park Road</h4><p>The heart of Primrose Hill, on our doorstep.</p></div></div>
   </div>
-  <p class="lnote reveal">Placeholder layout shown. Real, current listings with full photography would populate this search.</p>
+  <p class="lnote reveal">Real photography from Jeremy Bass shown. Current live listings would populate this search.</p>
 </div></section>
 
 <section id="why" class="founder"><div class="wrap split">
@@ -150,28 +164,43 @@
     <div class="eyebrow">Why Jeremy Bass</div>
     <h2>A village specialist beats a national chain.</h2>
     <p style="color:var(--muted)">Selling a prime Primrose Hill home is not a numbers game. It is about knowing the streets, the buyers, and how to present a home that deserves it. For 25 years that has been the whole point of this agency: one office, one patch, one specialist who treats your sale as personally as you do.</p>
-  </div>
-  <div class="reveal">
     <ul class="cred">
       <li>Owner-run since 2000, in the heart of the village</li>
       <li>Jeremy Bass FNAEA, Fellow-level industry accreditation</li>
       <li>Deep knowledge of NW1 streets, values and buyers</li>
-      <li>A discreet, personal service for prime vendors</li>
       <li>One point of contact, from valuation to completion</li>
     </ul>
+  </div>
+  <div class="reveal area" style="grid-template-columns:1fr 1fr;margin-top:0">
+    <figure><img src="proof/area3.jpg" alt="Villa-style homes, Albert Terrace, Primrose Hill"></figure>
+    <figure><img src="proof/area4.jpg" alt="Regents Canal at St Marks Crescent, Primrose Hill"></figure>
+    <figure><img src="proof/area1.jpg" alt="Regents Park Road, Primrose Hill"></figure>
+    <figure><img src="proof/area2.jpg" alt="Chalcot Crescent, Primrose Hill"></figure>
   </div>
 </div></section>
 
 <section id="founder"><div class="wrap split">
-  <div class="portrait reveal"><div><div class="ini">JB</div><div style="font-family:var(--serif);font-size:22px;margin-top:10px;color:var(--cream)">Jeremy Bass</div><div style="font-size:11px;letter-spacing:2px;color:var(--gold);margin-top:6px">FOUNDER · FNAEA</div></div></div>
+  <div class="pf reveal"><img src="proof/jeremy.jpg" alt="Jeremy Bass, founder and director"></div>
   <div class="reveal">
     <div class="eyebrow">The founder</div>
     <h2>Twenty-five years on one square mile.</h2>
     <p style="color:var(--muted)">Jeremy Bass founded the agency in 2000 with a simple promise: an exceptional, personal service for the people who own homes in Primrose Hill village. A quarter of a century later, that promise is still the whole business. When you instruct Jeremy Bass, you get Jeremy Bass, not a rotating cast of negotiators, and the knowledge that comes from selling these streets for 25 years.</p>
+    <p style="color:var(--muted)"><strong style="color:var(--ink)">Jeremy Bass FNAEA</strong> · Founder & Director</p>
   </div>
 </div></section>
 
-<section style="background:var(--cream2)"><div class="wrap">
+<section class="quotes"><div class="wrap">
+  <div class="eyebrow reveal">Clients</div>
+  <h2 class="reveal">Trusted by Primrose Hill sellers and buyers.</h2>
+  <div class="qgrid">
+    <div class="quote reveal"><div class="stars">★★★★★</div><p>"Jeremy Bass and his staff were quite wonderful. He paid a great deal of attention to all the steps necessary in reaching a final sale."</p><div class="by">- Ed B.</div></div>
+    <div class="quote reveal"><div class="stars">★★★★★</div><p>"We are writing to express our sincere thanks for your hard work in securing the sale of our flat in Primrose Hill."</p><div class="by">- Joel & Clare C.</div></div>
+    <div class="quote reveal"><div class="stars">★★★★★</div><p>"Delighted with your efforts, impressed and knew we chose the right agent."</p><div class="by">- Mr N.</div></div>
+    <div class="quote reveal"><div class="stars">★★★★★</div><p>"Thank you for listening and your support and help in finding our next home."</p><div class="by">- Mr & Mrs C.</div></div>
+  </div>
+</div></section>
+
+<section style="background:#fff"><div class="wrap">
   <div class="lm reveal">
     <div class="eyebrow">Free, no obligation</div>
     <h2>What is your Primrose Hill home worth?</h2>
