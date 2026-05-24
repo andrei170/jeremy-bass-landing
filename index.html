@@ -103,10 +103,17 @@
   .cinfo li b{color:var(--ink);display:inline-block;width:90px;font-weight:600}
   .reveal{opacity:0;transform:translateY(24px);transition:.8s cubic-bezier(.2,.7,.2,1)}
   .reveal.in{opacity:1;transform:none}
+  /* how we sell band */
+  .process{background:#fff}
+  .pgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;margin-top:38px}
+  .pstep{border:1px solid var(--line);border-radius:6px;padding:34px 28px;background:var(--cream)}
+  .pstep .num{font-family:var(--serif);font-size:40px;color:var(--gold);line-height:1;font-weight:600;margin-bottom:14px}
+  .pstep h3{font-family:var(--serif);font-size:23px;color:var(--ink);font-weight:600;letter-spacing:0;margin-bottom:8px}
+  .pstep p{color:var(--muted);font-size:14.5px}
   footer{background:var(--ink);color:var(--stone);font-size:13px;padding:42px 0;text-align:center}
   footer .logo{color:#fff;justify-content:center;margin-bottom:10px}
   .demo-tag{position:fixed;bottom:14px;right:14px;background:rgba(15,23,34,.92);color:var(--stone);font-size:11.5px;padding:8px 13px;border-radius:5px;z-index:60;letter-spacing:.3px}
-  @media(max-width:880px){.hero-grid,.split,.cgrid{grid-template-columns:1fr}.listings{grid-template-columns:1fr 1fr}.area{grid-template-columns:1fr 1fr}.qgrid{grid-template-columns:1fr}}
+  @media(max-width:880px){.hero-grid,.split,.cgrid{grid-template-columns:1fr}.listings{grid-template-columns:1fr 1fr}.area{grid-template-columns:1fr 1fr}.qgrid{grid-template-columns:1fr}.pgrid{grid-template-columns:1fr}}
   @media(max-width:560px){.listings{grid-template-columns:1fr}}
 </style>
 </head>
@@ -189,6 +196,17 @@
   </div>
 </div></section>
 
+<section class="process"><div class="wrap">
+  <div class="eyebrow reveal">How we sell your home</div>
+  <h2 class="reveal">Three steps, one person, start to finish.</h2>
+  <p class="lead reveal">No call centre and no hand-offs. You deal with Jeremy from the first valuation to the day the keys change hands.</p>
+  <div class="pgrid">
+    <div class="pstep reveal"><div class="num">01</div><h3>An honest valuation</h3><p>Jeremy visits personally, looks properly at your home, and gives you a realistic figure based on 25 years of selling these exact streets.</p></div>
+    <div class="pstep reveal"><div class="num">02</div><h3>Presented properly</h3><p>Your home is photographed and marketed to the standard the address deserves, then shown to the right buyers, discreetly and personally.</p></div>
+    <div class="pstep reveal"><div class="num">03</div><h3>Seen through to completion</h3><p>One point of contact through offers, negotiation and the legal process. The person who valued your home is the person who completes the sale.</p></div>
+  </div>
+</div></section>
+
 <section class="quotes"><div class="wrap">
   <div class="eyebrow reveal">Clients</div>
   <h2 class="reveal">Trusted by Primrose Hill sellers and buyers.</h2>
@@ -248,7 +266,13 @@
 <script>
   const prog=document.getElementById('prog');
   addEventListener('scroll',()=>{const h=document.documentElement;prog.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%';});
-  const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')}),{threshold:.12});
+  // staggered reveal: items inside the same parent fade in one after another
+  document.querySelectorAll('.listings,.qgrid,.pgrid,.area,.cred,.strip .wrap').forEach(group=>{
+    [...group.children].forEach((child,i)=>{
+      if(child.classList.contains('reveal')) child.style.transitionDelay=(i*0.09)+'s';
+    });
+  });
+  const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.12});
   document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 </script>
 </body>
