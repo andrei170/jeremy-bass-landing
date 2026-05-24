@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jeremy Bass | Prime Estate Agents for Primrose Hill Village, NW1</title>
+<meta name="description" content="The independent, owner-run estate agent for Primrose Hill village since 2000. Exceptional personal service for buyers and sellers of prime NW1 homes. Jeremy Bass FNAEA, 50 Chalcot Road.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Jeremy Bass | Prime Estate Agents, Primrose Hill Village">
+<meta property="og:description" content="The independent specialist for Primrose Hill village homes since 2000. Personal service from the founder, not a chain.">
+<meta property="og:url" content="https://andrei170.github.io/jeremy-bass-landing/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Jeremy Bass | Prime Estate Agents, Primrose Hill Village">
+<meta name="twitter:description" content="The independent specialist for Primrose Hill village homes since 2000.">
+<link rel="icon" href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'&gt;&lt;text y='.9em' font-size='90'&gt;🏡&lt;/text&gt;&lt;/svg&gt;">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#0f1722;--ink2:#16202e;--stone:#d8cdbb;--gold:#b89968;--gold2:#caa974;
+    --cream:#f6f2ea;--cream2:#ece5d8;--text:#1a2330;--muted:#5c6675;--line:rgba(15,23,34,.13);
+    --serif:'Cormorant Garamond',Georgia,serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:'Inter',-apple-system,Segoe UI,sans-serif;background:var(--cream);color:var(--text);line-height:1.7;font-weight:300;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  .wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+  a{color:inherit;text-decoration:none}
+  #prog{position:fixed;top:0;left:0;height:2px;width:0;z-index:99;background:linear-gradient(90deg,var(--gold),var(--ink2))}
+  .btn{display:inline-block;background:var(--ink);color:var(--cream);font-weight:500;padding:16px 36px;border-radius:3px;border:none;cursor:pointer;font-size:13.5px;letter-spacing:1px;text-transform:uppercase;transition:transform .15s,background .2s}
+  .btn:hover{transform:translateY(-2px);background:var(--ink2)}
+  .btn-gold{background:var(--gold);color:#1d1709}.btn-gold:hover{background:var(--gold2)}
+  .btn-ghost{background:transparent;border:1px solid var(--line);color:var(--ink)}
+  .btn-ghost:hover{background:rgba(15,23,34,.04)}
+  nav{position:sticky;top:0;z-index:40;backdrop-filter:blur(12px);background:rgba(246,242,234,.86);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:76px}
+  .logo{font-family:var(--serif);font-weight:600;font-size:26px;letter-spacing:.5px;color:var(--ink);line-height:1}
+  .logo small{display:block;font-family:'Inter';font-size:9px;letter-spacing:3.5px;text-transform:uppercase;color:var(--gold);font-weight:600;margin-top:3px}
+  .navlinks{display:flex;gap:30px;align-items:center}.navlinks a{font-size:13px;color:var(--muted);letter-spacing:.6px;text-transform:uppercase}.navlinks a:hover{color:var(--ink)}
+  @media(max-width:860px){.navlinks a:not(.btn){display:none}}
+  section{padding:92px 0}
+  .eyebrow{font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:20px}
+  h1{font-family:var(--serif);font-size:clamp(44px,7.2vw,82px);font-weight:500;line-height:1.0;letter-spacing:-.5px;color:var(--ink)}
+  h1 em{font-style:italic;color:var(--gold)}
+  h2{font-family:var(--serif);font-size:clamp(32px,4.6vw,52px);font-weight:500;line-height:1.05;color:var(--ink);margin-bottom:16px}
+  h3{font-size:15px;font-weight:600;margin-bottom:8px;letter-spacing:.4px}
+  p.lead{font-size:18px;color:var(--muted);margin:24px 0 36px;max-width:560px;font-weight:300}
+  .hero{position:relative;overflow:hidden;background:
+    linear-gradient(180deg,rgba(15,23,34,.0),rgba(15,23,34,.0)),
+    radial-gradient(90% 120% at 80% -10%,rgba(184,153,104,.14),transparent 60%),var(--cream);padding:70px 0 86px}
+  .hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:50px;align-items:center}
+  .est{display:inline-flex;align-items:center;gap:10px;font-size:12.5px;letter-spacing:.6px;color:var(--ink);border:1px solid var(--line);background:rgba(255,255,255,.6);border-radius:30px;padding:8px 16px;margin-bottom:26px}
+  .est b{color:var(--gold);font-family:var(--serif);font-size:17px}
+  .hero-card{border-radius:6px;overflow:hidden;background:linear-gradient(160deg,var(--ink2),var(--ink));color:var(--cream);padding:0;box-shadow:0 30px 60px -34px rgba(15,23,34,.7)}
+  .hero-card .photo{aspect-ratio:16/10;background:
+    linear-gradient(180deg,rgba(15,23,34,0),rgba(15,23,34,.55)),
+    radial-gradient(120% 130% at 30% 10%,#3a4a63,#1a2433),
+    linear-gradient(135deg,#33425a,#1a2433);display:grid;place-items:end start;padding:24px}
+  .hero-card .photo span{font-family:var(--serif);font-size:21px;color:var(--cream);font-style:italic}
+  .hero-card .meta{padding:26px 30px}
+  .hero-card .meta h3{font-family:var(--serif);font-size:23px;font-weight:500;letter-spacing:0;color:#fff;margin-bottom:10px}
+  .hero-card .meta p{color:var(--stone);font-size:14.5px}
+  .strip{background:var(--ink);color:var(--stone)}
+  .strip .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;padding:36px 24px}
+  .strip .s{flex:1;min-width:190px}
+  .strip b{font-family:var(--serif);display:block;font-size:30px;color:#fff;font-weight:500;margin-bottom:2px}
+  .strip small{font-size:13px}
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+  .listings{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:38px}
+  .lcard{border:1px solid var(--line);border-radius:6px;overflow:hidden;background:#fff;transition:transform .2s,box-shadow .2s}
+  .lcard:hover{transform:translateY(-4px);box-shadow:0 22px 44px -30px rgba(15,23,34,.5)}
+  .lcard .img{aspect-ratio:4/3;background:linear-gradient(135deg,#3a4a63,#1d2939);display:grid;place-items:center;color:var(--stone);font-family:var(--serif);font-style:italic;font-size:18px;position:relative}
+  .lcard .img .pill{position:absolute;top:12px;left:12px;font-family:'Inter';font-size:10px;letter-spacing:1.5px;text-transform:uppercase;background:var(--gold);color:#1d1709;padding:4px 10px;border-radius:2px;font-weight:700}
+  .lcard .b{padding:18px 20px}
+  .lcard .b h4{font-family:var(--serif);font-size:20px;color:var(--ink);font-weight:600}
+  .lcard .b p{color:var(--muted);font-size:13.5px;margin-top:4px}
+  .lnote{font-size:12.5px;color:var(--muted);font-style:italic;margin-top:16px}
+  .founder{background:#fff}
+  .portrait{aspect-ratio:4/5;border-radius:6px;background:linear-gradient(160deg,var(--ink2),var(--ink));display:grid;place-items:center;text-align:center;padding:34px;color:var(--cream)}
+  .portrait .ini{font-family:var(--serif);font-size:70px;color:var(--gold);font-weight:500}
+  .cred{list-style:none;margin-top:20px}
+  .cred li{padding:11px 0 11px 28px;position:relative;color:var(--muted);border-bottom:1px solid var(--line);font-size:15px}
+  .cred li:before{content:"❖";position:absolute;left:0;color:var(--gold)}
+  .lm{background:var(--ink);color:var(--cream);border-radius:6px;padding:54px 40px;text-align:center}
+  .lm h2{color:#fff}
+  .lm-form{display:flex;gap:10px;max-width:480px;margin:24px auto 0;flex-wrap:wrap}
+  .lm-form input{flex:1;min-width:220px;padding:15px 16px;border-radius:3px;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.07);color:#fff;font-size:15px}
+  .lm-form input::placeholder{color:#8893a3}
+  .lm-form input:focus{outline:none;border-color:var(--gold)}
+  .contact{background:var(--cream2)}
+  .cgrid{display:grid;grid-template-columns:1fr 1fr;gap:44px;align-items:center;margin-top:30px}
+  .cinfo li{list-style:none;padding:13px 0;border-bottom:1px solid var(--line);font-size:15px;color:var(--muted)}
+  .cinfo li b{color:var(--ink);display:inline-block;width:90px;font-weight:600}
+  .reveal{opacity:0;transform:translateY(24px);transition:.8s cubic-bezier(.2,.7,.2,1)}
+  .reveal.in{opacity:1;transform:none}
+  footer{background:var(--ink);color:var(--stone);font-size:13px;padding:42px 0;text-align:center}
+  footer .logo{color:#fff;justify-content:center;margin-bottom:10px}
+  .demo-tag{position:fixed;bottom:14px;right:14px;background:rgba(15,23,34,.92);color:var(--stone);font-size:11.5px;padding:8px 13px;border-radius:5px;z-index:60;letter-spacing:.3px}
+  @media(max-width:860px){.hero-grid,.split,.cgrid{grid-template-columns:1fr}.listings{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div id="prog"></div>
+
+<nav><div class="wrap">
+  <div class="logo">Jeremy Bass<small>Primrose Hill · NW1</small></div>
+  <div class="navlinks">
+    <a href="#properties">Properties</a>
+    <a href="#why">Why us</a>
+    <a href="#founder">Jeremy</a>
+    <a href="#valuation" class="btn">Book a valuation</a>
+  </div>
+</div></nav>
+
+<header class="hero"><div class="wrap hero-grid">
+  <div class="reveal in">
+    <div class="est">🌳 Selling Primrose Hill village since <b>2000</b></div>
+    <h1>The agent who <em>knows</em> Primrose Hill.</h1>
+    <p class="lead">Independent, owner-run, and devoted to one of London's most loved villages. Exceptional personal service for the people buying and selling prime homes in NW1, from the founder himself.</p>
+    <a href="#valuation" class="btn">Book a valuation</a>
+    <a href="#properties" class="btn-ghost btn" style="margin-left:10px">View properties</a>
+  </div>
+  <div class="hero-card reveal in">
+    <div class="photo"><span>Primrose Hill village</span></div>
+    <div class="meta"><h3>A boutique agency, by design</h3><p>One office, one specialist patch, and a founder who handles your sale personally. No call centres, no churn, no handing you to a junior.</p></div>
+  </div>
+</div></header>
+
+<div class="strip"><div class="wrap">
+  <div class="s reveal"><b>2000</b><small>Independent and owner-run for 25 years</small></div>
+  <div class="s reveal"><b>FNAEA</b><small>Jeremy Bass, Fellow of the National Association of Estate Agents</small></div>
+  <div class="s reveal"><b>NW1</b><small>A true Primrose Hill village specialist, not a chain</small></div>
+  <div class="s reveal"><b>1:1</b><small>You deal with the founder, start to finish</small></div>
+</div></div>
+
+<section id="properties"><div class="wrap">
+  <div class="eyebrow reveal">Properties</div>
+  <h2 class="reveal">Prime homes, presented properly.</h2>
+  <p class="lead reveal">This is how your home would be shown: photo-led, searchable, and worthy of the address. Live listings would appear here.</p>
+  <div class="listings">
+    <div class="lcard reveal"><div class="img"><span class="pill">For sale</span>Period house</div><div class="b"><h4>Regents Park Road</h4><p>A handsome period family home in the heart of the village.</p></div></div>
+    <div class="lcard reveal"><div class="img"><span class="pill">For sale</span>Garden flat</div><div class="b"><h4>Chalcot Square</h4><p>An elegant lateral apartment moments from the park.</p></div></div>
+    <div class="lcard reveal"><div class="img"><span class="pill">Sold</span>Mews house</div><div class="b"><h4>Primrose Hill mews</h4><p>A rare mews home, sold discreetly to the right buyer.</p></div></div>
+  </div>
+  <p class="lnote reveal">Placeholder layout shown. Real, current listings with full photography would populate this search.</p>
+</div></section>
+
+<section id="why" class="founder"><div class="wrap split">
+  <div class="reveal">
+    <div class="eyebrow">Why Jeremy Bass</div>
+    <h2>A village specialist beats a national chain.</h2>
+    <p style="color:var(--muted)">Selling a prime Primrose Hill home is not a numbers game. It is about knowing the streets, the buyers, and how to present a home that deserves it. For 25 years that has been the whole point of this agency: one office, one patch, one specialist who treats your sale as personally as you do.</p>
+  </div>
+  <div class="reveal">
+    <ul class="cred">
+      <li>Owner-run since 2000, in the heart of the village</li>
+      <li>Jeremy Bass FNAEA, Fellow-level industry accreditation</li>
+      <li>Deep knowledge of NW1 streets, values and buyers</li>
+      <li>A discreet, personal service for prime vendors</li>
+      <li>One point of contact, from valuation to completion</li>
+    </ul>
+  </div>
+</div></section>
+
+<section id="founder"><div class="wrap split">
+  <div class="portrait reveal"><div><div class="ini">JB</div><div style="font-family:var(--serif);font-size:22px;margin-top:10px;color:var(--cream)">Jeremy Bass</div><div style="font-size:11px;letter-spacing:2px;color:var(--gold);margin-top:6px">FOUNDER · FNAEA</div></div></div>
+  <div class="reveal">
+    <div class="eyebrow">The founder</div>
+    <h2>Twenty-five years on one square mile.</h2>
+    <p style="color:var(--muted)">Jeremy Bass founded the agency in 2000 with a simple promise: an exceptional, personal service for the people who own homes in Primrose Hill village. A quarter of a century later, that promise is still the whole business. When you instruct Jeremy Bass, you get Jeremy Bass, not a rotating cast of negotiators, and the knowledge that comes from selling these streets for 25 years.</p>
+  </div>
+</div></section>
+
+<section style="background:var(--cream2)"><div class="wrap">
+  <div class="lm reveal">
+    <div class="eyebrow">Free, no obligation</div>
+    <h2>What is your Primrose Hill home worth?</h2>
+    <p style="max-width:540px;margin:0 auto;color:var(--stone)">Request a personal valuation from Jeremy, or get our short guide to selling a prime home in Primrose Hill village: timing, presentation, and choosing the right agent. Sent straight to your inbox.</p>
+    <form class="lm-form" onsubmit="return false">
+      <input type="email" placeholder="your@email.com" required>
+      <button class="btn btn-gold" type="submit">Send me the guide</button>
+    </form>
+    <p style="color:#8893a3;font-size:12px;margin-top:12px">No spam. Just the guide, and a valuation whenever you are ready.</p>
+  </div>
+</div></section>
+
+<section id="valuation" class="contact"><div class="wrap">
+  <div class="eyebrow reveal">Get in touch</div>
+  <h2 class="reveal">Book your valuation.</h2>
+  <div class="cgrid">
+    <div class="reveal">
+      <p style="color:var(--muted);margin-bottom:18px">Our office is at the heart of Primrose Hill village on Chalcot Road. Call Jeremy directly, or request a valuation and he will be in touch personally.</p>
+      <ul class="cinfo">
+        <li><b>Office</b> 50 Chalcot Road, Primrose Hill, London NW1 8LS</li>
+        <li><b>Phone</b> 020 7722 8686</li>
+        <li><b>Email</b> info@jeremybass.co.uk</li>
+        <li><b>Since</b> 2000</li>
+      </ul>
+    </div>
+    <div class="reveal" style="text-align:center">
+      <div style="background:#fff;border:1px solid var(--line);border-radius:6px;padding:40px 30px">
+        <div style="font-size:38px;margin-bottom:10px">🏡</div>
+        <h3 style="font-family:var(--serif);font-size:25px;color:var(--ink);font-weight:600">Speak to Jeremy</h3>
+        <p style="color:var(--muted);margin:10px 0 22px;font-size:15px">A personal valuation from the founder, not a junior.</p>
+        <a href="tel:02077228686" class="btn" style="width:100%">Call 020 7722 8686</a>
+        <a href="#" class="btn-ghost btn" style="width:100%;margin-top:10px">Request a valuation</a>
+      </div>
+    </div>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="logo">Jeremy Bass<small style="color:var(--gold)">Primrose Hill · NW1</small></div>
+  50 Chalcot Road, Primrose Hill, London NW1 8LS · 020 7722 8686<br>
+  Independent prime estate agents for Primrose Hill village since 2000.
+</div></footer>
+
+<div class="demo-tag">concept build for Jeremy Bass · AG1 Consulting</div>
+<script>
+  const prog=document.getElementById('prog');
+  addEventListener('scroll',()=>{const h=document.documentElement;prog.style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%';});
+  const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('in')}),{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
